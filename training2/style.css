@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.board{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.column{
+    flex: 1;
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 300px;
+}
+
+.column h3{
+    margin-top: 0;
+}

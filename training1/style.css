@@ -1,0 +1,57 @@
+ body {
+     font-family: sans-serif;
+     padding: 1rem1;
+ }
+
+ .board {
+     display: flex;
+     gap: 1rem;
+     margin-top: 1rem;
+ }
+
+ .column {
+     flex: 1;
+     background: #f4f4f4;
+     padding: 1rem;
+     border-radius: 8px;
+     min-height: 300px;
+ }
+
+ .column h3 {
+     margin-top: 0;
+ }
+
+ .task-list {
+     height: 100px;
+     background-color: red;
+ }
+
+ .task {
+     background: white;
+     margin-top: 0.5rem;
+     padding: 0.5;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     cursor: move;
+     position: relative;
+ }
+
+ .task span {
+     display: block;
+ }
+
+ .drag-valid {
+     outline: 2px dashed green;
+ }
+
+ .drag-invalid {
+     outline: 2px dashed red;
+ }
+
+ .task-placeholder {
+     background: #e0e0e0;
+     border: 2px dashed #999;
+     height: 50px;
+     margin-bottom: 0.5rem;
+     border-radius: 4px;
+ }

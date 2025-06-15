@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager 1</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Task Manager</h1>
+    <form id="taskForm" aria-label="Add New Task">
+        <input type="text" id="taskDescription" placeholder="Task Description" required aria-required="true">
+        <!-- <input type="text" id="taskId" placeholder="Task ID" required aria-required="true"> -->
+        <button type="submit">Add Task</button>
+    </form>
+    <div class="board">
+        <div class="column" id="backlog">
+            <h3>Backlog ( <span class="count">0</span> )</h3>
+            <div class="task-list">
+
+            </div>
+        </div>
+        <div class="column" id="in-progress">
+            <h3>In-Progress ( <span class="count">0</span> )</h3>
+            <div class="task-list"></div>
+        </div>
+        <div class="column" id="done">
+            <h3>Done ( <span class="count">0</span> )</h3>
+            <div class="task-list"></div>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
